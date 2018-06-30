@@ -7,7 +7,7 @@ var remainingGuesses;
 
 function newGame() {
     remainingGuesses = 10;
-    var selectedWord = words[Math.ceil(Math.random() * words.length)];
+    var selectedWord = words[Math.floor(Math.random() * words.length)];
     word = new Word(selectedWord);
     console.log("Remaining guesses: " + remainingGuesses);
     console.log("Initial word: " + word.displayedWord());
