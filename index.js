@@ -20,7 +20,7 @@ function promptGuessLetter() {
             name: "guess",
             message: "Guess a letter",
             validate: function (input) {
-                return input.length == 1;
+                return input.length == 1 && /^[a-z]+$/i.test(input);
             }
         }
     ]).then(function (response) {

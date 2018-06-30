@@ -1,4 +1,3 @@
-console.log("Hello there!");
 var Letter = require("./letter.js");
 
 var Word = function (word) {
